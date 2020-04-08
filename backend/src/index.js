@@ -1,4 +1,5 @@
 const express = require('express')
+const {uuid} = require('uuidv4')
 
 const app = express();
 app.use(express.json());
@@ -8,7 +9,7 @@ const projects = [];
 app.get('/projects', (req, res) => {
    
    // Verificando a existência de projetos. Caso não exista retorna um erro.
-   if (projects) {
+   if (projects[0] === undefined) {
       return res.status(404).json({eror: 'Projects do not exist'})
    }
 
@@ -17,7 +18,13 @@ app.get('/projects', (req, res) => {
 });
 
 app.post('/projects', (req, res) => {
-   return res.json(['Projeto 1', 'Projeto 2', 'Project 3', 'Project 4'])
+   const {title, owner} = req.body;
+
+   const project = {id:uuid(), title, owner};
+
+   projects.push(project);
+   
+   return res.json(project)
 });
 
 app.put('/projects/:id', (req, res) => {
