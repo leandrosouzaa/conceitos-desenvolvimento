@@ -1,6 +1,6 @@
 # Conceitos de Desenvolvimento
 
-## Node.jS
+## Node.js
  - Permite o uso de JS no backend;
    - Rotas e integrações (banco de dados, serviços externos...)
    - Não se lida com eventos do usuário final (só é possível disparar códigos node através das rotas);
@@ -28,3 +28,45 @@
    - Microserviços;
 - AdonisJS
 - NextJS 
+
+## API REST
+ - Fluxo da requisição e resposta:
+   - Requisição feita por um cliente;
+   - Resposta retornada através de uma estrutura de dados;
+   - Cliente recebe resposta e processa resultado;
+
+ - Métodos HTTP:
+  - GET;
+  - POST;
+  - PUT;
+  - DELETE;
+
+ - Benefícios
+  - Múltiplo clientes (front-end), mesmo back-end
+  - Protocolo de comunicação padronizado;
+    - Mesma estrtura para web / mobile / api pública;
+    - Serviços externos
+
+ - Conteúdo da requisição
+   - Req Body;
+   - Route Params;
+   - Query params;
+   - Headers;
+
+ - HTTP Codes;
+   - 1xx: Informational;
+   - 2xx: Success
+     - 200: Success;
+     - 201: Created;
+   - 3xx: Redirection
+     - 301: Moved Permanently;
+     - 302: Moved;
+   - 4xx: Client Error
+     - 400: Bad request;
+     - 401: Unauthorized;
+     - 404: Not Found;
+   - 5xx: Server Error
+     - 400: Internal Server Error;
+
+
+
