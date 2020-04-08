@@ -36,16 +36,16 @@
    - Cliente recebe resposta e processa resultado;
 
  - Métodos HTTP:
-  - GET;
-  - POST;
-  - PUT;
-  - DELETE;
+   - GET;
+   - POST;
+   - PUT;
+   - DELETE;
 
  - Benefícios
-  - Múltiplo clientes (front-end), mesmo back-end
-  - Protocolo de comunicação padronizado;
-    - Mesma estrtura para web / mobile / api pública;
-    - Serviços externos
+   - Múltiplo clientes (front-end), mesmo back-end
+   - Protocolo de comunicação padronizado;
+     - Mesma estrtura para web / mobile / api pública;
+     - Serviços externos
 
  - Conteúdo da requisição
    - Req Body;
