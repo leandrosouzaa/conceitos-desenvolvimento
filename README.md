@@ -84,7 +84,10 @@
     - Front-end: Interface; 
   - Uma API, mútiplos clientes;
   - Programação declarativa;
-  
+
+## JSX
+ - Escrever HTML dentro do Javascript;
+ - Com React podemos criar nossos próprios elementos.
 
 
 
