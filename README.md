@@ -68,5 +68,24 @@
    - 5xx: Server Error
      - 400: Internal Server Error;
 
+## React
+ - Bibloteca para construção de interfaces;
+ - Utilizado para construção de Single-Page Application;
+ - Tudo fica dentro do Javascript;
+ - Nomenclatura:
+   - React: Bibloteca utilizada tanto no ReactJS quanto no ReactNative para construção de interfaces;
+   - ReactJS: React + ReactDOM;
+   - React Native: React + bibloteca para controlar elementos nativos;
+- Vantages:
+  - Organização do código
+    - Componentização (dividir código em partes);
+  - Divisão de responsabilidades: 
+    - Back-end: Regra de negócios;
+    - Front-end: Interface; 
+  - Uma API, mútiplos clientes;
+  - Programação declarativa;
+  
+
+
 
 
