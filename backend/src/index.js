@@ -7,14 +7,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
 const projects = [];
 
 function logRequests(req, res, next) {
-   const {method, url} = req;
+   const {method, url, ip } = req;
 
    const logLabel = `[${method.toUpperCase()}] ${url}`
    console.count('️\n#️⃣ ')
+   console.log(`🖥 ${req.headers['x-forwarded-for'] || req.connection.remoteAddress}`)
    console.log(`📃 ${logLabel}`)
    console.time(`⏱`)
    next();
