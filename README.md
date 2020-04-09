@@ -89,6 +89,17 @@
  - Escrever HTML dentro do Javascript;
  - Com React podemos criar nossos próprios elementos.
 
+## Imperativos X Declarativo
+ 
+## Babel/ Webpack
+ - O browser não entende todo esse código;
+ - O Babel converte o código JS de uma forma que o browser entenda;
+ - O Webpack possui várias funções:
+   - Criação do bundle, arquivo com todo código de aplicação;
+   - Ensinar ao JavaScript como importar arquivos CSS, imagens e etc;
+   - Live reload;
+   
+
 
 
 
