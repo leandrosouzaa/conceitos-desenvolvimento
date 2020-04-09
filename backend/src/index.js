@@ -7,13 +7,18 @@ app.use(express.json());
 const projects = [];
 
 app.get('/projects', (req, res) => {
+   const {title} = req.query
+
+   const results = title
+      ? projects.filter(project => project.title.includes(title))
+      : projects;
    // Verificando a existência de projetos. Caso não exista retorna um erro.
    if (projects[0] === undefined) {
       return res.status(404).json({eror: 'Projects not found'})
    }
 
    // Retornando Projetos
-   return res.json(projects)
+   return res.json(results)
 });
 
 app.post('/projects', (req, res) => {
@@ -55,7 +60,6 @@ app.delete('/projects/:id', (req, res) => {
    projects.splice(projectIndex, 1);
 
    return res.status(200).send();
-
 });
 
 app.listen(3333, () => {
