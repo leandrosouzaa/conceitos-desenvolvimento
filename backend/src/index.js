@@ -34,19 +34,28 @@ app.put('/projects/:id', (req, res) => {
 
    if (projectIndex < 0) {
       return res.status(404).json({eror: `Project with id ${id} not found`})
-   }
+   };
 
    const project = {
       title, 
       owner
-   }
-   projects[projectIndex] = project
+   };
+   projects[projectIndex] = project;
 
-   return res.json(project)
+   return res.json(project);
 });
 
 app.delete('/projects/:id', (req, res) => {
-   return res.json(['Projeto 2', 'Project 3', 'Project 4'])
+   const {id} = req.params;
+
+   if (projectIndex < 0) {
+      return res.status(404).json({eror: `Project with id ${id} not found`})
+   };
+
+   projects.splice(projectIndex, 1);
+
+   return res.status(200).send();
+
 });
 
 app.listen(3333, () => {
