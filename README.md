@@ -99,7 +99,11 @@
    - Ensinar ao JavaScript como importar arquivos CSS, imagens e etc;
    - Live reload;
    
-
-
-
-
+## React Native
+ - Versão React para desenvolvimento mobile;
+ - Multiplataforma;
+ - É possível manipular cada plataforma de forma diferente;
+ - Interface nativa;
+ - Código não é transpilado;
+ - Empresas utilizam (Microsoft...);
+ 
