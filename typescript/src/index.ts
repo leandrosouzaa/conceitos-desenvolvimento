@@ -1,10 +1,10 @@
 import express from 'express'
+import helloWorld from './routes'
+
 
 const app = express()
 
-app.get('/', (req, res) => {
-   return res.json({message: 'Ola Leandro'})
-})
+app.get('/', helloWorld)
 
 
 
