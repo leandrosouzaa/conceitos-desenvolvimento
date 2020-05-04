@@ -111,4 +111,29 @@
  - Sintaxe
    - Mesma declaração de componentes;
    - Utilizamos componentes próprios do HTML (View, Text, Image...);
+   
+## Arquitetura e TDD
+ - Atual estrutura de pastas
+ ```
+  --src
+    --config
+    --database
+    --errors
+    --middlewares
+    --models
+    --repositories
+    --routes
+    --services
+ ```
+ - Domínio
+   - Área de conhecimento daquele módulo/arquivo;
+
+ - DDD: Domain Driven Design (metodologia)
+   - Se aplica somente no Backend;
+   - Conceitos, principios, pattenrs e boas práticas que devem ser utilizadas;
+
+ - TDD: Test Driven Development (metodologia)
+   - Desenvolver o teste antes de desenvolver a feature;
+   - Criar regras de como a aplicação deve funcionar;
+   
  
