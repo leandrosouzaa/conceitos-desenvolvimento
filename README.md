@@ -106,4 +106,9 @@
  - Interface nativa;
  - Código não é transpilado;
  - Empresas utilizam (Microsoft...);
+  - Arquitetura
+   - JS -> Metro Bundler(Packager) -> Bundle -> Bridge -> Código da Plataforma;
+ - Sintaxe
+   - Mesma declaração de componentes;
+   - Utilizamos componentes próprios do HTML (View, Text, Image...);
  
