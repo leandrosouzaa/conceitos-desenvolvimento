@@ -135,5 +135,13 @@
  - TDD: Test Driven Development (metodologia)
    - Desenvolver o teste antes de desenvolver a feature;
    - Criar regras de como a aplicação deve funcionar;
-   
+ 
+ - Testes Automatizados
+   - Garantir que a aplicação continue funcionando independente do número de funcinalidades e do número de devs no time.
+   - Testes Unitários: Testam funcionalidades específicas de nossa aplicação (precisam ser funções puras)
+     - Funções puras não dependem de serviços externos.
+   - Testes de Integração: Testam uma funcionalidade completa, passando por X camadas da aplicação.
+     - Route -> Controller - Serviço -> Repositório -> ...
+   - Testes E2E
+     - Testes que simulam a ação do usuário dentro da nossa aplicação. (Usuário entrando na aplicação, se cadastrando, logando e navegando para a tela certa.
  
